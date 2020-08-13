@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<htlm lang="en"
+<head>
+<title>Pacific Trails Resort :: Reservations</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="pacific.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<h1>Pacific Trails Resort</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="yurts.html">Yurts</a></li>
+		<li><a href="activities.html">Activities</a></li>
+		<li><a href="reservations.html">Reservations</a></i>
+		<li><a href="shop.html">Shop</a></li>
+	</ul>
+</nav>
+<Main>
+	<h2>Reservation at Pacific Trails</h2>
+	<h3>Contact Us</h3>
+	<p>Required information is marked with an asterisk (*).</p>
+	<form method="post" action="http://webdevbasics.net/scripts/pacific.php">
+		<label for="myFname">*First name: </label>
+			<input style="text" name="myFname" id="myFname" required="required">
+		<label for="myLname">*Last name: </label>
+			<input style="text" name="myLname" id="myLname" required="required">
+		<label for="myEmail">*E-mail: </label>
+			<input style="email" name="myEmail" id="myEmail" required="required">
+		<label for="myPhone">Phone: </label>
+			<input style="tel" name="myPhone" id="myPhone">
+		<label for="myCalendar">Arrival Date: </label>
+			<input type="date" name="myCalendar" id="myCalendar">
+		<label for="myNights">Nights: </label>
+			<input type="number" name="myNights" id="myNights" min="1" max="14">
+		<label for="myComments">*Comments: </label>
+			<textarea name="myComments" id="myComments" rows="2" cols="20" required="required">
+			</textarea>
+		<input id="mySubmit" type="submit" value="Submit">
+	</form>
+		
+		
+</main>
+<footer>
+Copyright &copy; 2014 Pacific Trails Resort<br><a href="milto:CollinJQuigely@pacifictrailsresort.com">CollinJ
+Quigley@pacifictrailsresort.com</a>
+</footer>
+</div>
+</body>
+</html>
+

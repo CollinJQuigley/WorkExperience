@@ -1,0 +1,219 @@
+body { 
+	background-color: #FFFFCC;
+	color: #330000;
+	font-family: Verdana, Arial, sans-serif; 
+	background-image: images/backgroundgif;
+}
+header { 
+	background-image: url(images/javalogo.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #CCAA66;
+	color: #000000;
+	height: 100px; 
+	display: block;
+}
+h1 { 
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden; 
+}
+nav { 
+	text-align: center; 
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	padding-top: 10px;
+	display: block;
+}
+nav a {
+	text-decoration: none;
+	padding-bottom: 15px;
+}
+nav a:link {
+	color: #996633;
+}
+nav a:visited {
+	color: #CCAA66;
+}
+nav a:hover {
+	color: #330000;
+}
+nav ul {
+	list-style-type: none;
+}
+footer {
+	background-color: #CCAA66;
+	color: #000000;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	float: clear;
+	display: block;
+}
+footer a:link {
+	color: #FFFFCC;
+}
+footer a:visited {
+	color: #F2EAB7;
+}
+footer a:hover {
+	color: #330000;
+}
+#wrapper { 
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%; 
+	background-color: #FFFFCC;
+	min-width: 700px;
+	max-width: 1024px;
+	box-shadow: 5px 5px 5px 
+}
+h2 { 
+	text-transform: uppercase;
+	background-color: #FFFFCC;
+	color: #663300;
+	font-size: 1.2em;
+	borer-bottom: 1px solid #000000;
+	padding: 5px 0 0 5px;
+	margin-right: 20px;
+	clear: left;
+}
+main { 
+	padding: 10px 30px 20px 20px;
+	margin-left: 150px;
+	background-color: #F2EAB7;
+	color: #000000;
+	overflow: auto;
+	display: block;
+}
+#details {
+	padding-right: 20%;
+	padding-right: 20%;
+	overflow: auto; 
+}
+img { 
+	image-border: none;
+}
+table {
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	border-spacing: 0;
+	background-color: #FFFFCC;
+}
+td, th {
+	padding: 10px;
+}
+tr:nth-of-type(odd) {
+	background-color: #CCAA66;
+}	
+.floatright {
+	float: right;
+	padding-left: 20px;
+}
+.floatleft {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+#mobile {
+	display: none;
+}
+#desktop {
+	display: inline;
+}
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 20px;
+<!-- The right padding is to be adjusted to what works best with the page.-->
+}
+input, textarea { 
+	display: block;
+	margin-bottom: 1em;
+}
+#mySubmit {
+	margin-left: 12em;
+}
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0;
+		background-image: none;
+	}
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		box-shadow: 0;
+	}
+	header {
+		background-image: url(images/javalogomobile.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 80px;
+	}
+	nav {
+		float: none;
+		width: auto;
+		padding: 0;
+		margin: 0;
+	}
+	nav li {
+		display: inline-block;
+	}
+	nav a {
+		padding: 1em;
+		font-size: 1.3em;
+		width: 8em;
+		font-weight: bold;
+		border-style: none;
+	}
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+	main {
+		padding: 2em;
+		margin: 0;
+		font-size: 90%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	nav a {
+		display: block;
+		padding: 0.2em;
+		width: auto;
+		bottom-border: 1px #330000;
+	}
+	li {
+		display: block;
+	}
+	h2 {
+		padding: 0.5em 0 0 0.5em;
+		right-margin: 0.5em;
+	}
+	#details {
+		left-padding: 0;
+		right-padding: 0;
+	}
+	.floatright {
+		display: none;
+	}
+	.floatleft {
+		left-padding: 0.5em;
+		right-padding: 0.5em;
+	}
+	#mobile {
+		display: inline;
+	}
+	#desktop {
+		display: none;
+	}
+}
+}

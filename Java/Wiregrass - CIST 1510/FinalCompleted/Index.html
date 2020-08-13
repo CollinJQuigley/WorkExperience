@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quigley's Crazy Zoo - Home</title>
+	<meta charset="utf-8">
+	<link href="quigleyCrazyZoo.css" rel="stylesheet">
+	<meta name="description" content="A blog about the crazy pets in the Quigley household and their wild 
+	adventures.">
+	<!-- I had a friend help me code this script for an idea I had for the website. The data does not save and will reset everytime the browser is refreshed, but it displays the general concept. -->
+	<script type="text/javascript">
+	function voteForAnimal(){
+		var rockyMeter = document.getElementById("rockyMeter");
+		var crushMeter = document.getElementById("crushMeter");
+		var mortyMeter = document.getElementById("mortyMeter");
+		var jackMeter = document.getElementById("jackMeter");
+		var roscoeMeter = document.getElementById("roscoeMeter");
+		var snowballMeter = document.getElementById("snowballMeter");
+		
+		var rockyLabel = document.getElementById("rockyLbl");
+		var crushLabel = document.getElementById("crushLbl");
+		var mortyLabel = document.getElementById("mortyLbl");
+		var jackLabel = document.getElementById("jackLbl");
+		var roscoeLabel = document.getElementById("roscoeLbl");
+		var snowballLabel = document.getElementById("snowballLbl");
+		var totalVotesLabel = document.getElementById("totalVotesLbl");
+		
+		var rockyVotes = rockyMeter.value;
+		var crushVotes = crushMeter.value;
+		var mortyVotes = mortyMeter.value;
+		var jackVotes = jackMeter.value;
+		var roscoeVotes = roscoeMeter.value;
+		var snowballVotes = snowballMeter.value;
+		var totalVotes = rockyVotes+crushVotes+mortyVotes+jackVotes+roscoeVotes+snowballVotes;
+		
+		var rocky = document.getElementById("rockyOpt");
+		if(rocky.checked){
+			rockyVotes += 1;
+			rockyMeter.value = rockyVotes;
+			rockyLabel.innerHTML = rockyVotes;
+			totalVotesLabel.innerHTML = totalVotes+1;
+		}
+		
+		var crush = document.getElementById("crushOpt");  
+		if(crush.checked){
+			crushVotes += 1;
+			crushMeter.value = crushVotes;
+			crushLabel.innerHTML = crushVotes;
+			totalVotesLabel.innerHTML = totalVotes+1;
+		}
+		
+		var morty = document.getElementById("mortyOpt");
+		if(morty.checked){
+			mortyVotes += 1;
+			mortyMeter.value = mortyVotes;
+			mortyLabel.innerHTML = mortyVotes;
+			totalVotesLabel.innerHTML = totalVotes+1;
+		}
+		
+		var jack = document.getElementById("jackOpt");
+		if(jack.checked){
+			jackVotes += 1;
+			jackMeter.value = jackVotes;
+			jackLabel.innerHTML = jackVotes;
+			totalVotesLabel.innerHTML = totalVotes+1;
+		}
+		
+		var roscoe = document.getElementById("roscoeOpt");
+		if(roscoe.checked){
+			roscoeVotes += 1;
+			roscoeMeter.value = roscoeVotes;
+			roscoeLabel.innerHTML = roscoeVotes;
+			totalVotesLabel.innerHTML = totalVotes+1;
+		}
+		
+		var snowball = document.getElementById("snowballOpt");
+		if(snowball.checked){
+			snowballVotes += 1;
+			snowballMeter.value = snowballVotes;
+			snowballLabel.innerHTML = snowballVotes;
+			totalVotesLabel.innerHTML = totalVotes+1;
+		}
+	}
+	</script>
+	<!-- This is the end of the JavaScript he helped with.-->
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<h1>Quigley's Crazy Zoo</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li><hr>
+			<li><a href="newsFeed.html">News Feed</a></li><hr>
+			<li><a href="bio.html">Bio</a></li><hr>
+			<li><a href="gallery.html">Gallery</a></li><hr>
+			<li><a href="yourIdea.html">Your Idea</a></li><hr>
+			<li><a href="questions.html">Questions</a></li><hr>
+		</ul>
+	</nav>
+	<div id="rightcol">
+	<main>
+		<h1>Home</h1>
+		<h3>Welcome to Quigley's Crazy Zoo!</h3>
+		<p>This is a website dedicated to the Quigley's crazy pets. You can see all their dumb adventures
+		, crazy moments, and odd reactions! The pets are always doing things to keep this page and all 
+		its exponents busy and full of new content. We have an active Twitter account you can follow at 
+		<a href="https://twitter.com/QuigleyZoo">@QuigleyZoo</a> to stay up to date! So come back often for 
+		new amounts of hilarious stuff!</p>
+		<h3>That Start of Quigley's Crazy Zoo</h3>
+		<p>The Quigley Zoo is a medley of pets. We started out with rescuing Snowball from Alaska. At that 
+		time we had two other cats and one dog. Over time the two older cats and dog passed away, leaving 
+		Snowball alone. When at a pet store, we saw a Sulcata Tortoise that was the size of a silver 
+		dollar. What else could we do but take him home? Later, after rescuing a mother cat and her kittens, we 
+		were once again filling our home. We found good homes for all of the kittens and the mom except 
+		Crush and Morty. Around this time we fell in love with a puppy being given away at Walmart. 
+		Here enters Jack. Soon we realized that Jack needed a friend that wasn't a cat, so we rescued 
+		Roscoe.</p>
+		<h3>What the Pages are for</h3>
+		<p>The Home page is used to explain what this website is about and for. The News Feed page will 
+		show you the most recent or popular posts from our other social medias. The Bio page goes over all 
+		the Quigley pets and gives you some detais about them. The Gallery page is full of photos and 
+		videos (Some not shown on Twitter!) for you to go through.The Your Idea page is where you can 
+		submit your ideas that you would want to the pets to do; be creative! The Questions page is where 
+		you can see common asked questions about the pets and ask us your own!</p>
+		<h3>Vote for your Favorite!</h3>
+		<div id="ranking">
+		<!-- This is the idea that I had and his JavaScript is what makes it work. -->
+		<img class="leftfloat" src="images/rockyPortrait.jpg" alt="Rocky" height="150" width="150"><br><br><input type="radio" id="rockyOpt" name="votes" value="Rocky">Rocky<br><br><br><br><br><br>
+		<img class="leftfloat" src="images/crushPortrait.jpg" alt="Crush" height="150" width="150"><br><br><input type="radio" id="crushOpt" name="votes" value="Crush">Crush<br><br><br><br><br><br>
+		<img class="leftfloat" src="images/MortyPortrait.jpg" alt="Mortimer" height="150" width="150"><br><br><input type="radio" id="mortyOpt" name="votes" value="Morty">Morty<br><br><br><br><br><br>
+		<img class="leftfloat" src="images/jackPortrait.jpg" alt="Jack" height="150" width="150"><br><br><input type="radio" id="jackOpt" name="votes" value="Jack">Jack<br><br><br><br><br><br>
+		<img class="leftfloat" src="images/roscoePortrait.jpg" alt="Roscoe" height="150" width="150"><br><br><input type="radio" id="roscoeOpt" name="votes" value="Roscoe">Roscoe<br><br><br><br><br><br>
+		<img class="leftfloat" src="images/snowballPortrait.jpg" alt="Snowball" height="150" width="150"><br><br><input type="radio" id="snowballOpt" name="votes" value="Snowball">Snowball<br><br><br><br><br>
+		<input type="submit" id="voteSub" onclick="voteForAnimal()" value="Submit"><br><br>
+		Popularity<br>
+		<meter id="rockyMeter" value="0" min="0" max="10"></meter>&nbsp;<label id="rockyLbl">0</label>Votes for Rocky<br>
+		<meter id="crushMeter" value="0" min="0" max="10"></meter>&nbsp;<label id="crushLbl">0</label>Votes for Crush<br>
+		<meter id="mortyMeter" value="0" min="0" max="10"></meter>&nbsp;<label id="mortyLbl">0</label>Votes for Morty<br>
+		<meter id="jackMeter" value="0" min="0" max="10"></meter>&nbsp;<label id="jackLbl">0</label>Votes for Jack<br>
+		<meter id="roscoeMeter" value="0" min="0" max="10"></meter>&nbsp;<label id="roscoeLbl">0</label>Votes for Roscoe<br>
+		<meter id="snowballMeter" value="0" min="0" max="10"></meter>&nbsp;<label id="snowballLbl">0</label>Votes for Snowball<br><br>
+		Out of <label id="totalVotesLbl">0</label> Total Votes<br><br>	
+		<!-- The end of what his JavaScript effects.-->
+		</div>
+	</main>
+	<footer>
+		Copyright &copy; Quigley's Crazy Zoo - All Rights Reserved.<br><a href="milto:CollinJQuigely@
+		quigleycrazyzoo.com">CollinJQuigley@QuigleyCrazyZoo.com.</a>
+	</footer>
+	</div>
+</div>
+</body>
+</html>

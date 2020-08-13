@@ -1,0 +1,33 @@
+# Project: Mod3Prod_Quigley
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = HouseholdBudget.o Budget.o $(RES)
+LINKOBJ  = HouseholdBudget.o Budget.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = Mod3Prod_Quigley.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Mod3Prod_Quigley.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Mod3Prod_Quigley.exe" $(LIBS)
+
+HouseholdBudget.o: HouseholdBudget.cpp
+	$(CPP) -c HouseholdBudget.cpp -o HouseholdBudget.o $(CXXFLAGS)
+
+Budget.o: Budget.cpp
+	$(CPP) -c Budget.cpp -o Budget.o $(CXXFLAGS)

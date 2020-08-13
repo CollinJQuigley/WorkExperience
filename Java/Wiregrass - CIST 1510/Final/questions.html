@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quigley's Crazy Zoo - Q&A</title>
+	<meta charset="utf-8">
+	<link href="quigleyCrazyZoo.css" rel="stylesheet">
+	<meta name="description" content="A blog about the crazy pets in the Quigley household and their wild 
+	adventures.">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function() {
+		$('#more').click(function() {
+			$('#expand').toggle();
+		});
+		$('#moreTwo').click(function() {
+			$('#expandTwo').toggle();
+		});
+		$('#moreThree').click(function() {
+			$('#expandThree').toggle();
+		});
+		$('#moreFour').click(function() {
+			$('#expandFour').toggle();
+		});
+		$('#moreFive').click(function() {
+			$('#expandFive').toggle();
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<h1>Quigley's Crazy Zoo</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li><hr>
+			<li><a href="newsFeed.html">News Feed</a></li><hr>
+			<li><a href="bio.html">Bio</a></li><hr>
+			<li><a href="gallery.html">Gallery</a></li><hr>
+			<li><a href="yourIdea.html">Your Idea</a></li><hr>
+			<li><a href="questions.html">Questions</a></li><hr>
+		</ul>
+	</nav>
+	<div id="rightcol">
+	<main>
+		<h1>Questions?</h1>
+		<h4>Have questions? Go through our common asked questions to see if you can find your answers there. 
+		If not feel free to send us your questions and we'll try to get back to you as soon as possible
+		</h4>
+		<h3>Common Asked Questions</h3>
+		<p id="questions">Are Morty and Crush twins? <a href="#" id="more">Answer</a></p>
+			<div id="expand">
+				Yes, Crush and Morty are twins. They were actually in a litter of 5 kittens that 
+				we addopted from a police station. They would find and take in wild cats.
+			</div>
+		<p id="questions">What type of dog is Jack? <a href="#" id="moreTwo">Answer</a></p>
+			<div id="expandTwo">
+				Jack is a mixture of Greyhound and lab. We are not 100% sure becasue we got him 
+				from a guy giving away puppies outside of Walmart. We just title him a Heinz 57.
+			</div>
+		<p id="questions">Where do you get your pets? <a href="#" id="moreThree">Answer</a></p>
+			<div id="expandThree">
+				All our pets (except Rocky and Squiggles) are rescues. We always rescue and try to 
+				pick the pets that might not be picked. Roscoe was at the Humane Society for a 
+				long time, and no one was planning on pickig him up. For that reason we chose him 
+				since his time there was almost up.
+			</div>
+		<p id="questions">What do you feed Rocky? <a href="#" id="moreFour">Answer</a></p>
+			<div id="expandFour">
+				Besides eating as much grass as he wants from the backyard, we feed him lots 
+				of vegetables and flowers. The vegetables consists of broccoli, cucumbers, kale, 
+				carrots, squash, zucchini, and spinach. The flowers he likes are hibiscus, roses, 
+				and sweet potato leaves. Every once in awhile we give him treats that consist of 
+				watermellon rinds and pumpkin. 
+			</div>
+		<p id="questions">How do all the pets react with Rocky? <a href="#" id="moreFive">Answer</a></p>
+			<div id="expandFive">
+				All the pets get along great with Rocky. They all grew up with him so they are 
+				used to him. At times though Jack will forget about him and assume it's a moving 
+				rock. He freaks out a bit but then seems to remember.
+			</div>
+		<h3>Have a Different Question?</h3>
+		<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+			<label class="label" for="fName">First Name:</label>
+			<input type="text" name="fName" id="fName" required="required" placeholder="Your first name"><br>
+			<label class="label" for="lName">Last Name:</label>
+			<input type="text" name="lName" id="lName" required="required" placeholder="Your last name"><br>
+			<label class="label" for="myEmail">E-mail:</label>
+			<input type="email" name="myEmail" id="myEmail" required="required" placeholder=
+			"you@yourdomain.com"><br>
+			<label class="label" for="myComments">Comments:</label>
+			<textarea name="myComments" id="myComments" rows="2" cols="20"
+				required="required" placeholder="Ask your question here!"></textarea><br>			
+			<input id="mySubmit" type="submit" value="Ask your Question.">
+		</form>
+	</main>
+	<footer>
+		Copyright &copy; Quigley's Crazy Zoo - All Rights Reserved.<br><a href="milto:CollinJQuigely@
+		quigleycrazyzoo.com">CollinJQuigley@QuigleyCrazyZoo.com.</a>
+	</footer>
+	</div>
+</div>
+</body>
+</html>

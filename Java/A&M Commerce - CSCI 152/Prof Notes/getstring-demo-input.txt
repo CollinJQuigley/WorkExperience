@@ -1,0 +1,6 @@
+Monty Python         82  79  92  75
+Eric Idle            74  82  90  60
+John Cleese          60  75  84  70
+Michael Palin        50   0  72  73
+Terry Jones          75  80 100 100
+Terry Gilliam         0  70  70  72

@@ -1,0 +1,28 @@
+Colors
+
+
+Light blue: 05B8CC
+Light green: 90EE90
+whiteis green: BCED91
+Blue: 0000FF
+light grey: 737373
+Shadow color: 4F4F4F
+Nav red: EE0000
+light red: CC1100
+Dark red: 660000
+coral red: FF7256
+tomatoe red: FF6347
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function() {
+		$('#more').click(function() {
+			$('#expand').toggle();
+		});
+	});
+	</script>
+<a href="#" id="more">More</a> 
+<div id="expand">
+
+

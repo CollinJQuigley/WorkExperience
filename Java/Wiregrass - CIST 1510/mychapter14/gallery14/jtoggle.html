@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Image Gallery</title>
+<meta charset="utf-8">
+<style>
+	body {
+		background-color: #333333;
+		color: #EAEAEA;
+	}
+	#gallery {
+		width: 800px;
+	}
+	#gallery ul {
+		width: 300px;
+		float: left;
+		list-marker: none;
+	}
+	#gallery li {
+		inline: display;
+		float: left;
+		padding: 16px
+	}
+	#gallery img {
+		border-style-type: none;
+	}
+	#gallery figure {
+		padding-top: 30px;
+		text-align: center;
+	}
+	#gallery figcaption {
+		font-weight: bold;
+		font-size: 1,5em;
+	}
+</style>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function() {
+		$('#gallery a').click(function() {
+			var galleryHref = $(this).attr('href');
+			var galleryAlt = $(this).attr('title');
+			$('figure').css('display','none');
+			$('figure img').attr({ src: galleryHref, alt: galleryAlt });
+			$('figcaption').html(galleryAlt);
+			$('figure').fadeToggle(1000);
+			return false;
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<div id="gallery">
+		<ul>
+			<li>
+				<a href="photo1.jpg" title="Golden Gate Bridge">
+				<img src="photo1thumb.jpg" width="100" height="75" alt="Golden Gate 
+				Bridge"></a>
+			</li>
+			<li>
+				<a href="photo2.jpg" title="California Beach">
+				<img src="photo2thumb.jpg" width="100" height="75" alt="California Beach"
+				></a>
+			</li>
+			<li>
+				<a href="photo3.jpg" title="Other Beach">
+				<img src="photo3thumb.jpg" width="100" height="75" alt="Other Beach"></a>
+			</li>
+			<li>
+				<a href="photo4.jpg" title="Pacific Sunset">
+				<img src="photo4thumb.jpg" width="100" height="75" alt="Pacific Sunset"
+				></a>
+			</li>
+		</ul>
+		<figure>
+			<img src="photo1.jpg">
+			<figcaption>Golden Gate Bridge</figcaption>
+		</figure>
+	</div>
+</body>
+</html>
